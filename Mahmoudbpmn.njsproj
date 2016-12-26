@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{c2e2fb05-3475-4644-ad9f-76662bf79cdb}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>Gruntfile.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="Gruntfile.js" />
+        <Content Include="app\index.html" />
+        <Compile Include="app\index.js" />
+        <Content Include="dist\index.html" />
+        <Content Include="dist\model-helper.css" />
+        <Compile Include="dist\index.js" />
+        <Content Include="docs\screenshot.png" />
+        <Content Include="app\css\app.css" />
+        <Content Include="app\css\model-helper.css" />
+        <Content Include="app\descriptors\magic.json" />
+        <Content Include="app\images\plus.png" />
+        <Content Include="app\images\subtraction.png" />
+        <Compile Include="app\provider\magic\index.js" />
+        <Compile Include="app\provider\magic\MagicPropertiesProvider.js" />
+        <Compile Include="app\provider\magic\parts\SpellProps.js" />
+        <Content Include="dist\css\app.css" />
+        <Content Include="dist\css\bootstrap.min.css" />
+        <Content Include="dist\css\diagram-js.css" />
+        <Content Include="dist\css\model-helper.css" />
+        <Content Include="dist\descriptors\magic.json" />
+        <Content Include="dist\images\black-minus-2-256.png" />
+        <Content Include="dist\images\download.png" />
+        <Content Include="dist\images\plus.png" />
+        <Content Include="dist\images\subtraction.png" />
+        <Content Include="dist\vendor\bpmn-font\css\bpmn-embedded.css" />
+        <Content Include="dist\vendor\bpmn-font\css\bpmn.css" />
+        <Content Include="dist\vendor\bpmn-font\font\bpmn.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="app" />
+        <Folder Include="app\css" />
+        <Folder Include="app\descriptors" />
+        <Folder Include="app\images" />
+        <Folder Include="app\provider" />
+        <Folder Include="app\provider\magic" />
+        <Folder Include="app\provider\magic\parts" />
+        <Folder Include="dist" />
+        <Folder Include="dist\css" />
+        <Folder Include="dist\descriptors" />
+        <Folder Include="dist\images" />
+        <Folder Include="dist\vendor" />
+        <Folder Include="dist\vendor\bpmn-font" />
+        <Folder Include="dist\vendor\bpmn-font\css" />
+        <Folder Include="dist\vendor\bpmn-font\font" />
+        <Folder Include="docs" />
+        <Folder Include="resources" />
+        <Folder Include="styles" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
